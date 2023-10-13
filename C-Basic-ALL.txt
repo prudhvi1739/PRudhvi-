@@ -1,0 +1,938 @@
+{
+    "_id" : "LIC_PRIV1049",
+    "licenseType" : "C-Basic",
+    "licensePlan" : "AL",
+    "sections" : {
+        "allProjects" : {
+            "subFeatures" : [ 
+                {
+                    "name" : "dashboard",
+                    "applicableFor" : [ 
+                        "automation", 
+                        "manual", 
+                        "defects"
+                    ]
+                }, 
+                {
+                    "name" : "projectsMenu",
+                    "applicableFor" : [ 
+                        "automation", 
+                        "manual", 
+                        "defects"
+                    ]
+                }, 
+                {
+                    "name" : "configuration",
+                    "applicableFor" : [ 
+                        "automation", 
+                        "manual", 
+                        "defects"
+                    ]
+                }, 
+                {
+                    "name" : "license",
+                    "applicableFor" : [ 
+                        "automation", 
+                        "manual", 
+                        "defects"
+                    ]
+                }
+            ]
+        },
+        "individualProjects" : {
+            "subFeatures" : [ 
+                {
+                    "name" : "dashboard",
+                    "applicableFor" : [ 
+                        "defects", 
+                        "manual", 
+                        "automation"
+                    ]
+                }, 
+                {
+                    "name" : "projectsMenu",
+                    "applicableFor" : [ 
+                        "defects", 
+                        "manual", 
+                        "automation"
+                    ]
+                }, 
+                {
+                    "name" : "analytics",
+                    "applicableFor" : [ 
+                        "defects", 
+                        "manual", 
+                        "automation"
+                    ]
+                }, 
+                {
+                    "name" : "repository",
+                    "applicableFor" : [ 
+                        "automation"
+                    ]
+                }, 
+                {
+                    "name" : "testData",
+                    "applicableFor" : [ 
+                        "defects", 
+                        "manual", 
+                        "automation"
+                    ]
+                }, 
+                {
+                    "name" : "testDev",
+                    "applicableFor" : [ 
+                        "defects", 
+                        "manual", 
+                        "automation"
+                    ]
+                }, 
+                {
+                    "name" : "execution",
+                    "applicableFor" : [ 
+                        "manual", 
+                        "automation"
+                    ]
+                }, 
+                {
+                    "name" : "configuration",
+                    "applicableFor" : [ 
+                        "defects", 
+                        "manual", 
+                        "automation"
+                    ]
+                }, 
+                {
+                    "name" : "defect",
+                    "applicableFor" : [ 
+                        "defects"
+                    ]
+                }
+            ]
+        }
+    },
+    "features" : {
+        "dashboard" : {
+            "menu" : {
+                "allProjects" : {
+                    "subFeatures" : [ 
+                        {
+                            "name" : "projects",
+                            "applicableFor" : [ 
+                                "defects", 
+                                "manual", 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "users",
+                            "applicableFor" : [ 
+                                "defects", 
+                                "manual", 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "clients",
+                            "applicableFor" : [ 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "memory",
+                            "applicableFor" : [ 
+                                "defects", 
+                                "manual", 
+                                "automation"
+                            ]
+                        }
+                    ]
+                },
+                "individualProjects" : {
+                    "subFeatures" : [ 
+                        {
+                            "name" : "projectInformation",
+                            "applicableFor" : [ 
+                                "defects", 
+                                "manual", 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "resources",
+                            "applicableFor" : [ 
+                                "manual", 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "executionSuites",
+                            "applicableFor" : [ 
+                                "manual", 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "memory",
+                            "applicableFor" : [ 
+                                "defects", 
+                                "manual", 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "testDataFiles",
+                            "applicableFor" : [ 
+                                "defects", 
+                                "manual", 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "screenshots",
+                            "applicableFor" : [ 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "videos",
+                            "applicableFor" : [ 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "programElement",
+                            "applicableFor" : [ 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "defectAttachments",
+                            "applicableFor" : [ 
+                                "defects"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "projectsMenu" : {
+            "menu" : {
+                "allProjects" : {
+                    "subFeatures" : [ 
+                        {
+                            "name" : "projects",
+                            "applicableFor" : [ 
+                                "automation", 
+                                "manual", 
+                                "defects"
+                            ]
+                        }, 
+                        {
+                            "name" : "users",
+                            "applicableFor" : [ 
+                                "automation", 
+                                "manual", 
+                                "defects"
+                            ]
+                        }, 
+                        {
+                            "name" : "roles",
+                            "applicableFor" : [ 
+                                "automation", 
+                                "manual", 
+                                "defects"
+                            ],
+                            "subFeatures" : [ 
+                                {
+                                    "name" : "dashboard",
+                                    "applicableFor" : [ 
+                                        "defects", 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "analytics",
+                                    "applicableFor" : [ 
+                                        "defects", 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "repository",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "testData",
+                                    "applicableFor" : [ 
+                                        "defects", 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "testDevelopment",
+                                    "applicableFor" : [ 
+                                        "defects", 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "execution",
+                                    "applicableFor" : [ 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "configuration",
+                                    "applicableFor" : [ 
+                                        "defects", 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "defects",
+                                    "applicableFor" : [ 
+                                        "defects"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "individualProjects" : {
+                    "subFeatures" : [ 
+                        {
+                            "name" : "projectConfig",
+                            "applicableFor" : [ 
+                                "automation", 
+                                "manual", 
+                                "defects"
+                            ]
+                        }, 
+                        {
+                            "name" : "users",
+                            "applicableFor" : [ 
+                                "automation", 
+                                "manual", 
+                                "defects"
+                            ]
+                        }, 
+                        {
+                            "name" : "roles",
+                            "applicableFor" : [ 
+                                "automation", 
+                                "manual", 
+                                "defects"
+                            ],
+                            "subFeatures" : [ 
+                                {
+                                    "name" : "dashboard",
+                                    "applicableFor" : [ 
+                                        "defects", 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "analytics",
+                                    "applicableFor" : [ 
+                                        "defects", 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "repository",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "testData",
+                                    "applicableFor" : [ 
+                                        "defects", 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "testDevelopment",
+                                    "applicableFor" : [ 
+                                        "defects", 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "execution",
+                                    "applicableFor" : [ 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "configuration",
+                                    "applicableFor" : [ 
+                                        "defects", 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "defects",
+                                    "applicableFor" : [ 
+                                        "defects"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "restrictions" : {
+                "numberOfProjects" : 100,
+                "numberOfUsers" : 3,
+                "numberOfRoles" : 100,
+                "allowedUsers" : [ 
+                    "Super Admin", 
+                    "Admin", 
+                    "User"
+                ],
+                "allowedProjects" : [ 
+                    {
+                        "featureType" : "defects",
+                        "projects" : [ 
+                            "WebAndMobile", 
+                            "Web", 
+                            "MS Dynamics", 
+                            "Mobile", 
+                            "Web Services", 
+                            "Salesforce"
+                        ]
+                    }, 
+                    {
+                        "featureType" : "manual",
+                        "projects" : [ 
+                            "WebAndMobile", 
+                            "Web", 
+                            "MS Dynamics", 
+                            "Mobile", 
+                            "Web Services", 
+                            "Salesforce"
+                        ]
+                    }, 
+                    {
+                        "featureType" : "automation",
+                        "projects" : [ 
+                            "WebAndMobile", 
+                            "Web", 
+                            "MS Dynamics", 
+                            "Mobile", 
+                            "Web Services", 
+                            "Salesforce"
+                        ]
+                    }
+                ],
+                "numberOfElements" : 0,
+                "numberOfProgramElements" : 0,
+                "numberOfStepGroups" : 0,
+                "numberOfScripts" : 0,
+                "numberOfScriptsForModule" : 0,
+                "numberOfSuites" : 0,
+                "numberOfSuiteOfSuites" : 0,
+                "numberOfDefects" : 0
+            }
+        },
+        "analytics" : {
+            "menu" : {
+                "allProjects" : null,
+                "individualProjects" : {
+                    "subFeatures" : [ 
+                        {
+                            "name" : "manualSuite",
+                            "applicableFor" : [ 
+                                "manual"
+                            ]
+                        }, 
+                        {
+                            "name" : "automationSuite",
+                            "applicableFor" : [ 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "defectAnalytics",
+                            "applicableFor" : [ 
+                                "defects"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "repository" : {
+            "menu" : {
+                "allProjects" : null,
+                "individualProjects" : {
+                    "subFeatures" : [ 
+                        {
+                            "name" : "elements",
+                            "applicableFor" : [ 
+                                "automation"
+                            ],
+                            "subFeatures" : [ 
+                                {
+                                    "name" : "projectElements",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "sharedElements",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name" : "programElements",
+                            "applicableFor" : [ 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "stepGroups",
+                            "applicableFor" : [ 
+                                "automation"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "restrictions" : {
+                "numberOfProjects" : 0,
+                "numberOfUsers" : 0,
+                "numberOfRoles" : 0,
+                "allowedUsers" : null,
+                "allowedProjects" : null,
+                "numberOfElements" : 10000,
+                "numberOfProgramElements" : 10000,
+                "numberOfStepGroups" : 10000,
+                "numberOfScripts" : 0,
+                "numberOfScriptsForModule" : 0,
+                "numberOfSuites" : 0,
+                "numberOfSuiteOfSuites" : 0,
+                "numberOfDefects" : 0
+            }
+        },
+        "testData" : {
+            "menu" : {
+                "allProjects" : null,
+                "individualProjects" : {
+                    "subFeatures" : [ 
+                        {
+                            "name" : "testData",
+                            "applicableFor" : [ 
+                                "automation", 
+                                "manual", 
+                                "defects"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "testDev" : {
+            "menu" : {
+                "allProjects" : null,
+                "individualProjects" : {
+                    "subFeatures" : [ 
+                        {
+                            "name" : "scripts",
+                            "applicableFor" : [ 
+                                "defects", 
+                                "manual", 
+                                "automation"
+                            ],
+                            "subFeatures" : [ 
+                                {
+                                    "name" : "module",
+                                    "applicableFor" : [ 
+                                        "defects", 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "automationScript",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "run",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "quickRunSettings",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "manualTestCase",
+                                    "applicableFor" : [ 
+                                        "manual"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name" : "executionDashboard",
+                            "applicableFor" : [ 
+                                "automation"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "restrictions" : {
+                "numberOfProjects" : 0,
+                "numberOfUsers" : 0,
+                "numberOfRoles" : 0,
+                "allowedUsers" : null,
+                "allowedProjects" : null,
+                "numberOfElements" : 0,
+                "numberOfProgramElements" : 0,
+                "numberOfStepGroups" : 0,
+                "numberOfScripts" : 100,
+                "numberOfScriptsForModule" : 50,
+                "numberOfSuites" : 0,
+                "numberOfSuiteOfSuites" : 0,
+                "numberOfDefects" : 0
+            }
+        },
+        "execution" : {
+            "menu" : {
+                "allProjects" : null,
+                "individualProjects" : {
+                    "subFeatures" : [ 
+                        {
+                            "name" : "suiteType",
+                            "applicableFor" : [ 
+                                "automation", 
+                                "manual"
+                            ],
+                            "subFeatures" : [ 
+                                {
+                                    "name" : "manual",
+                                    "applicableFor" : [ 
+                                        "manual"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "automation",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "restrictions" : {
+                "numberOfProjects" : 0,
+                "numberOfUsers" : 0,
+                "numberOfRoles" : 0,
+                "allowedUsers" : null,
+                "allowedProjects" : null,
+                "numberOfElements" : 0,
+                "numberOfProgramElements" : 0,
+                "numberOfStepGroups" : 0,
+                "numberOfScripts" : 0,
+                "numberOfScriptsForModule" : 0,
+                "numberOfSuites" : 100,
+                "numberOfSuiteOfSuites" : 100,
+                "numberOfDefects" : 0
+            }
+        },
+        "defects" : {
+            "menu" : {
+                "allProjects" : null,
+                "individualProjects" : {
+                    "subFeatures" : [ 
+                        {
+                            "name" : "defects",
+                            "applicableFor" : [ 
+                                "defects"
+                            ]
+                        }, 
+                        {
+                            "name" : "selectedTemplate",
+                            "applicableFor" : [ 
+                                "defects"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "restrictions" : {
+                "numberOfProjects" : 0,
+                "numberOfUsers" : 0,
+                "numberOfRoles" : 0,
+                "allowedUsers" : null,
+                "allowedProjects" : null,
+                "numberOfElements" : 0,
+                "numberOfProgramElements" : 0,
+                "numberOfStepGroups" : 0,
+                "numberOfScripts" : 0,
+                "numberOfScriptsForModule" : 0,
+                "numberOfSuites" : 0,
+                "numberOfSuiteOfSuites" : 0,
+                "numberOfDefects" : 100000
+            }
+        },
+        "configuration" : {
+            "menu" : {
+                "allProjects" : {
+                    "subFeatures" : [ 
+                        {
+                            "name" : "resultConfiguration",
+                            "applicableFor" : [ 
+                                "automation", 
+                                "manual"
+                            ],
+                            "subFeatures" : [ 
+                                {
+                                    "name" : "testDev",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "suites",
+                                    "applicableFor" : [ 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name" : "integrations",
+                            "applicableFor" : [ 
+                                "defects", 
+                                "automation", 
+                                "manual"
+                            ],
+                            "subFeatures" : [ 
+                                {
+                                    "name" : "cloudPlatform",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "CICD",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "projectManagement",
+                                    "applicableFor" : [ 
+                                        "defects", 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "collaborationTools",
+                                    "applicableFor" : [ 
+                                        "defects", 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name" : "emailConfiguration",
+                            "applicableFor" : [ 
+                                "defects", 
+                                "automation", 
+                                "manual"
+                            ]
+                        }, 
+                        {
+                            "name" : "memoryConfiguration",
+                            "applicableFor" : [ 
+                                "defects", 
+                                "automation", 
+                                "manual"
+                            ]
+                        }, 
+                        {
+                            "name" : "importAndExport",
+                            "applicableFor" : [ 
+                                "defects", 
+                                "automation", 
+                                "manual"
+                            ]
+                        }, 
+                        {
+                            "name" : "templates",
+                            "applicableFor" : [ 
+                                "defects", 
+                                "manual"
+                            ],
+                            "subFeatures" : [ 
+                                {
+                                    "name" : "manualTestCaseTemplates",
+                                    "applicableFor" : [ 
+                                        "manual"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "defectTemplates",
+                                    "applicableFor" : [ 
+                                        "defects"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name" : "runConfiguration",
+                            "applicableFor" : [ 
+                                "automation"
+                            ],
+                            "subFeatures" : [ 
+                                {
+                                    "name" : "environmentConfiguration",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "waitConfiguration",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "screenshotAndVideoConfiguration",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "individualProjects" : {
+                    "subFeatures" : [ 
+                        {
+                            "name" : "runConfiguration",
+                            "applicableFor" : [ 
+                                "automation"
+                            ],
+                            "subFeatures" : [ 
+                                {
+                                    "name" : "environmentConfiguration",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "waitConfiguration",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "screenshotAndVideoConfiguration",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name" : "resultConfiguration",
+                            "applicableFor" : [ 
+                                "manual", 
+                                "automation"
+                            ],
+                            "subFeatures" : [ 
+                                {
+                                    "name" : "testDev",
+                                    "applicableFor" : [ 
+                                        "automation"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "suites",
+                                    "applicableFor" : [ 
+                                        "manual", 
+                                        "automation"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "name" : "variables",
+                            "applicableFor" : [ 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "emailConfiguration",
+                            "applicableFor" : [ 
+                                "defects", 
+                                "manual", 
+                                "automation"
+                            ]
+                        }, 
+                        {
+                            "name" : "templates",
+                            "applicableFor" : [ 
+                                "defects", 
+                                "manual"
+                            ],
+                            "subFeatures" : [ 
+                                {
+                                    "name" : "manualTestCaseTemplates",
+                                    "applicableFor" : [ 
+                                        "manual"
+                                    ]
+                                }, 
+                                {
+                                    "name" : "defectTemplates",
+                                    "applicableFor" : [ 
+                                        "defects"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "startDate" : "15/06/2023 15:14:25",
+    "expired" : false,
+    "licenseTypeDisplay" : "Cloud Basic",
+    "_class" : "com.tyss.optimize.data.models.db.model.LicensePrivilege"
+}
