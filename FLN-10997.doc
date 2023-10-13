@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#FLN-10997] Filter Implementation for FireFlink</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://tyss.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [FLN-10997]&nbsp;<a href="https://tyss.atlassian.net/browse/FLN-10997">Filter Implementation for FireFlink</a>
+            <span class="subText">
+               Created: 07/Mar/23                   &nbsp;Updated: 30/Jun/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">to be updated</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tyss.atlassian.net/secure/BrowseProject.jspa?id=10413">Flinko</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Epic
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="63e4bf9ffb75f8568f64824a"
+                id="word_reporter_63e4bf9ffb75f8568f64824a"
+                href="https://tyss.atlassian.net/secure/ViewProfile.jspa?accountId=63e4bf9ffb75f8568f64824a">
+                    Shashank (Inactive)
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Unassigned
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-31701-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            ScrumTeam1                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://tyss.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20230619-094216.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://tyss.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20230629-123355.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://tyss.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20230629-123418.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://tyss.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20230629-123552.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://tyss.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20230629-123625.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://tyss.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20230629-123704.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://tyss.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20230629-123852.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Name:</b></td>
+                <td id="customfield_10103-31701-value" class="value" bgcolor="#ffffff" width="80%">      Filter
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10100-31701-value" class="value" bgcolor="#ffffff" width="80%">ScrumTeam1_Sprint2</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><ins><b>Acceptance criteria:</b></ins><br/>
+Given the user has valid credentials to the FireFlink.<br/>
+When the user Logs into the FireFlink application.<br/>
+Then User should be able to Filter and It should be uniform across all the pages in the FireFlink application.</p>
+
+<p><ins>Filter</ins></p>
+
+<ol>
+	<li>Filtering provides more advance way to fetch the required data in the respective columns.</li>
+	<li>After filtering only records that match the criteria should be displayed on the list.</li>
+	<li>Upon clicking on filter icon it should display drop down, where in user can select the check box. Search option should be provided if options are more than 8.</li>
+	<li>Users should be provided with a filter icon at the top right corner of the page.<br/>
+<span class="image-wrap" style=""><img src="/rest/api/3/attachment/content/27883" width="96.69421487603306%" style="border: 0px solid black" /></span></li>
+	<li>Upon clicking on the filter icon user should be provided with a pop-up with the header as “Filter”.<br/>
+<span class="image-wrap" style=""><img src="/rest/api/3/attachment/content/27879" width="96.69421487603306%" style="border: 0px solid black" /></span></li>
+	<li>At the top right corner, provide <b>clear all</b> option. Upon clicking it all the selected filteres should be cleared.</li>
+	<li>The <b>column name</b> for which the filter should be applied and the date selection filter if the column contains the date as information and  <b>Cancel</b> and <b>Apply</b> buttons should be provided.</li>
+	<li>The user should be provided with a selected filter section where all the selected filters should be displayed. If there is no filter then it should show as a message - “No filter selected”.</li>
+	<li>Below the selected filters section user should be provided with the column name where the user can select the required filter.</li>
+	<li>Under the column name, user should be provided with a dropdown, which should be a multi-select checkbox with a placeholder as “<b>Select</b>”.<br/>
+<span class="image-wrap" style=""><img src="/rest/api/3/attachment/content/27881" width="96.69421487603306%" style="border: 0px solid black" /></span></li>
+	<li>User should be provided with a calendar in the filter selection for the column name which contains, date as information with a placeholder as “<b>DD/MM/YYYY</b>”.<br/>
+<span class="image-wrap" style=""><img src="/rest/api/3/attachment/content/27882" width="96.69421487603306%" style="border: 0px solid black" /></span></li>
+	<li>Selected filter should be displayed in the “selected filter section” dynamically.  <br/>
+<span class="image-wrap" style=""><img src="/rest/api/3/attachment/content/27880" width="96.69421487603306%" style="border: 0px solid black" /></span></li>
+	<li>For the date selection, the User should select the start and end date, after selecting the date, start and end date should be highlighted using a solid colour, and the intermediate date should be highlighted with light colour.</li>
+	<li>User should be allowed to enter the date manually also.</li>
+	<li>Once the user removes the filter from the selected filter section then that option should be unchecked from that dropdown and vice versa.</li>
+</ol>
+
+
+<p><b>Functional validation :</b></p>
+
+<ol>
+	<li>“Clear all” – should be disabled when there is no filters is selected and should be enabled when the filter is applied.</li>
+	<li>The selected filter should be displayed with the column name as a header in the selected filter section.<br/>
+<span class="image-wrap" style=""><img src="/rest/api/3/attachment/content/27884" width="96.69421487603306%" style="border: 0px solid black" /></span></li>
+	<li>The selected filter should be displayed in white background with blue colour text and on mouse hover close icon should come, Upon clicking on the close icon the filter should be removed from the selected filter section and it should be unchecked from the filter dropdown and vice versa.</li>
+	<li>Upon clicking on the cancel button, Filter popup should be closed and no changes should be updated.</li>
+	<li>Upon clicking on the Apply button, Filter popup should be closed and filtered data should be displayed.</li>
+	<li>When the user enters the end date less than the start date manually and clicks on apply button, then the boundary of the date field should change to red and apply action should not happen.</li>
+	<li>When the user selects a date in the end date calendar, which is less than the start date then the start date should change to the selected end date.</li>
+</ol>
+
+
+<p><ins><b>Design Requirement</b></ins></p>
+
+<ol>
+	<li>Upon mouse hover on the <b>Apply</b> and <b>Cancel</b> buttons the colour of the button should change to “Blue” and “Grey” respectively.</li>
+	<li>The filter icon colour should change to solid colour only if the filter is applied.</li>
+	<li>On mouse hover on the filter icon, a tooltip should be displayed as “filter”.</li>
+</ol>
+
+
+<p><b>At all project level</b></p>
+
+<p>a.	Dashboard -Filter Not required.<br/>
+b.	Project Menu<br/>
+	I.	Project List-Filter is required.<br/>
+		i.	Status column Filter is required should give filter checkbox options <span class="error">&#91;Open, Closed, Archive&#93;</span><br/>
+		ii.	Modified on column should be filtered as Start/From and End/To date.<br/>
+	II.	Users List -Filter is required.<br/>
+		i.	Privilege column Filter is required should give filter checkbox options <span class="error">&#91;Super Admin, Admin, User&#93;</span>.<br/>
+		ii.	Modified on column should be filtered as Start/From and End/To date.<br/>
+		iii.	Status column Filter is required should give filter checkbox options <span class="error">&#91;Active, Activation pending, Disabled&#93;</span>.<br/>
+	III.	Roles List-Filter is required.<br/>
+		i.	Provide filter for Role and Modified On column.<br/>
+c.	Configuration<br/>
+	I.	Run configuration - Filter not required.<br/>
+	II.	Result Configuration -Filter not required.<br/>
+	III.	Integration -Filter is not required.<br/>
+	IV.	Email Configuration.<br/>
+		i.	Created on column should be filtered as Start/From and End/To date.<br/>
+	V.	Memory Configuration-Filter is not required<br/>
+	VI.	Import &amp; Export-Filter not required.<br/>
+	VII.	Templates-Filter is required</p>
+<ul class="alternate" type="square">
+	<li>Manual Test Case Templates-Sorting is required.<br/>
+			i.	Template Type should give filter checkbox options <span class="error">&#91;Predefined, User defined&#93;</span><br/>
+			ii.	Modified on should be filtered as Start/From and End/To date.</li>
+	<li>Defect Templates-Filter is required.<br/>
+			i.	Template Type should give filter checkbox options <span class="error">&#91;Predefined, User defined&#93;</span><br/>
+			ii.	Modified on should be filtered as Start/From and End/To date.<br/>
+d.	License Management-Filter is required<span class="error">&#91;Active, Expired&#93;</span>.</li>
+</ul>
+
+
+<ol>
+	<li><b>At Individual Project Level</b><br/>
+a.	Dashboard -Filter Not required.<br/>
+b.	Project Menu<br/>
+	I.	Project config-Filter is not required.<br/>
+	II.	Users List -Filter is required.<br/>
+		•	Privilege Column-Filter is required should give filter checkbox options <span class="error">&#91;Super Admin, Admin, User&#93;</span><br/>
+		•	Role column Filter is required<span class="error">&#91;Full Access, Executive Access, Customized Access&#93;</span><br/>
+		•	Modified on should be filtered as Start/From and End/To date.<br/>
+		•	Status column Filter is not required. <br/>
+	III.	Roles List- Filter is required.<br/>
+		•	From Column Filter is required<span class="error">&#91;License, Project&#93;</span><br/>
+		•	Modified by column Filter is not required.<br/>
+		•	Modified on column should be filtered as Start/From and End/To date.<br/>
+c.	Analytics - Filter is required.<br/>
+	I.	Automation Suite-Filter is required.<br/>
+	II.	Manual Suite-Filter is required.<br/>
+	III.	Defects Analytics - Filter is required.<br/>
+d.	Repository<br/>
+	I.	Elements.</li>
+</ol>
+<ul class="alternate" type="square">
+	<li>Project Elements - Filter is required.<br/>
+			i.	Type column Filter is required should give filter checkbox options <span class="error">&#91;Button, Link, Text field, Radio Button, Check Box, Text, Text Area, Image, Drop down&#93;</span><br/>
+			ii.	State column Filter is required should give filter checkbox options <span class="error">&#91;New, Commit, Publish&#93;</span></li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li>Shared Elements - Filter is required.<br/>
+			i.	Type column Filter is required should give filter checkbox options <span class="error">&#91;Button, Link, Text field, Radio Button, Check Box, Text, Text Area, Image, Drop down&#93;</span><br/>
+			ii.	State column Filter is required should give filter checkbox options <span class="error">&#91;New, Commit, Publish&#93;</span></li>
+</ul>
+
+
+<p>	II.	Program Elements - Filter by state<span class="error">&#91;New, Commit, Publish&#93;</span>.<br/>
+	III.	Step Groups - Filter is required.<br/>
+		1.	Steps – Filter is not required.<br/>
+		2.	Parameters - Filter is required for Type<span class="error">&#91;Array, Arrays, Big decimal&#93;</span>.<br/>
+		3.	Variables.<br/>
+			•	Step Group Variables - Filter is not required.<br/>
+			•	Global Variables- Filter by state<span class="error">&#91;New, Commit, Publish&#93;</span>.<br/>
+			•	PE Variables- Filter by state<span class="error">&#91;New, Commit, Publish&#93;</span>.<br/>
+e.	Test Data.<br/>
+	•	Type column Filter is required should give filter checkbox options <span class="error">&#91;xlsx, xls, pdf, svg, jpeg, mp3, mp4, ipa, apk (all format are supported)&#93;</span><br/>
+	•	State column Filter is required should give filter checkbox options <span class="error">&#91;New, Commit, Publish&#93;</span></p>
+
+<p>f.	Test Dev<br/>
+	 I.	Scripts-Filter is required<br/>
+		i.	Test case Type Column Filter is required should give filter checkbox options <span class="error">&#91;Manual, Automation&#93;</span>.<br/>
+		ii.	Type column Filter is required<span class="error">&#91;based on available options&#93;</span>.<br/>
+		iii.	State column Filter is required should give filter checkbox options <span class="error">&#91;New, Commit, Publish&#93;</span></p>
+<ul class="alternate" type="square">
+	<li>Module – Filter is required, Filter by Type and State.<br/>
+			1.	If user clicks on Script then,<br/>
+			2.	Automation Steps – Filter is required, Filter by Status.<br/>
+			3.	Variables<br/>
+				i.	Local Variables - Filter is not required<br/>
+				ii.	Global Variables - Filter is required, Filter by State.<br/>
+				iii.	Project Environment Variables - Filter is required, Filter by State.<br/>
+			4.	Settings<br/>
+				i.	Pre-post Condition - Filter is required, Filter by Status.<br/>
+				ii.	Depends on Script - Filter is not required.<br/>
+				iii.	Data Providers - Filter is not required.<br/>
+			5.	Web Services - Not Required.</li>
+	<li>Variables<br/>
+				i.	Global Variable- Filter by State<br/>
+				ii.	Project Environment Variable – Filter by state</li>
+	<li>Settings<br/>
+				i.	Pre-Post Conditions- Filter by Status.</li>
+	<li>Execution dashboard.<br/>
+				i.	Run initiated on should be filtered as Start/From and End/To date.<br/>
+				ii.	Status column Filter is required should give filter checkbox options <span class="error">&#91;Passed, Failed, Warning, Skipped, Flakey, Queued&#93;</span><br/>
+		II.	Execution Dashboard-Filter is required<br/>
+		•	Run initiated on should be filtered as Start/From and End/To date.<br/>
+		•	Status column Filter is required should give filter checkbox options <span class="error">&#91;Passed, Failed, Warning, Skipped, Flakey, Queued&#93;</span><br/>
+		III.	Scheduled Instances<br/>
+		•	Execution Type filter is required<br/>
+		•	Scheduled On filter is required<br/>
+		•	Expires On filter is required<br/>
+		•	Recurrence filter is required by <span class="error">&#91;Once, Daily, Weekly, Monthly&#93;</span>.<br/>
+g.	Execution<br/>
+	I.	Suites-Filter is required.<br/>
+	•	Suite Type Column Filter is required should give filter checkbox options <span class="error">&#91;Automation, manual&#93;</span>.<br/>
+	•	Access column Filter is required should give filter checkbox options <span class="error">&#91;Public, Private&#93;</span>.<br/>
+	•	Result column Filter is required should give filter checkbox options <span class="error">&#91;N/A, Terminated, Failed, Passed&#93;</span>.<br/>
+	II.	Scheduled Instances<br/>
+	•	Execution Type filter is required <span class="error">&#91;Sequential, Parallel&#93;</span>.<br/>
+	•	Scheduled On filter is required<span class="error">&#91;Start Date and End Date&#93;</span>.<br/>
+	•	Expires On filter is required<span class="error">&#91;Start Date and End Date&#93;</span>.<br/>
+	•	Recurrence filter is required by <span class="error">&#91;Once, Daily, Weekly, Monthly&#93;</span>.<br/>
+h.	Defect-Filter is required.<br/>
+	•	Severity column Filter is required should give filter checkbox options <span class="error">&#91;Blocker, Critical, Major, Minor&#93;</span>.<br/>
+	•	Priority column Filter is required should give filter checkbox options <span class="error">&#91;High, Medium. Low&#93;</span>.<br/>
+	•	State column Filter is required should give filter checkbox options <span class="error">&#91;based on template&#93;</span>.<br/>
+i.	Configuration<br/>
+	I.	Run configuration-Filter is not required.<br/>
+	II.	Result Configuration -Filter not required.<br/>
+	III.	Variables</li>
+	<li>Project Environment Variables-Filter is required.<br/>
+			i.	State column Filter is required should give filter checkbox options <span class="error">&#91;New, Commit, Publish&#93;</span>.</li>
+</ul>
+
+
+<ul class="alternate" type="square">
+	<li>Global Variables-Filter is required.<br/>
+			i.	State column Filter is required should give filter checkbox options <span class="error">&#91;New, Commit, Publish&#93;</span>.</li>
+</ul>
+
+
+<p>	IV.	Email Configuration-Filter is required.<br/>
+		•	Created on column should be filtered as Start/From and End/To date.<br/>
+	V.	Import &amp; Export-Filter not required.<br/>
+	VI.	Templates-Filter is required</p>
+<ul class="alternate" type="square">
+	<li>Manual Test Case Templates-Filter is required.<br/>
+			i.	Template Type Column Filter is required should give filter checkbox options <span class="error">&#91;Predefined, User defined&#93;</span>.<br/>
+			ii.	From Column Filter is required<span class="error">&#91;License, Project&#93;</span>.</li>
+</ul>
+
+
+<p>                              iii.    Modified on column should be filtered as Start/From and End/To date.</p>
+
+<ul class="alternate" type="square">
+	<li>Defect Templates-Filter is required.<br/>
+		               i.	Template Type Column Filter is required should give filter checkbox options <span class="error">&#91;Predefined, User defined&#93;</span>.<br/>
+			       ii.	From Column Filter is required<span class="error">&#91;License, Project&#93;</span><br/>
+			      iii.	Modified on column should be filtered as Start/From and End/To date. </li>
+</ul>
+
+
+
+<p><ins><b>Functional Validation:</b></ins></p>
+
+<ol>
+	<li>Where ever Filter option is provided, if user filter the resource not present, then respective “<b>No &lt;&lt;Data&gt;&gt; Found”</b> should be displayed at the center of that respective page.</li>
+	<li>When user is navigated to page which does not contain any data, Filter icons should be in disabled state.</li>
+	<li>If User apply filters and applies Sort, then sort should be applied for the Filtered data. And if user clears the filters now, then sorting order should still remain same.</li>
+	<li>If User apply filters and search any data, then filter should be applied for the searched data. And if user clears the search now, then filter should still remain applied.</li>
+	<li>When filters are not applied, <b>Filter</b> and <b>Calendar</b> icons should be in <b>Hallow</b> state. If applied Filter and Calendar icons should be in <b>Solid</b> state.</li>
+</ol>
+
+
+<p><ins><b>Design Requirement:</b></ins></p>
+
+<ol>
+	<li>Filter icon should be ‘Blue’ in color and should be hollow. when user applies any filter, then icon should be filled.</li>
+	<li>On mouse hovering the filter icon, tool tip should be displayed with text ‘Filter’.</li>
+	<li>for filtering the ‘Modified on' column , calendar icon should be provided.<br/>
+<span class="image-wrap" style=""><img src="/rest/api/3/attachment/content/27002" width="96.6896551724138%" style="border: 0px solid black" /></span></li>
+</ol>
+
+
+<p><ins><b>Refer XD Link:</b></ins> </p>
+
+<ol>
+	<li><a href="https://xd.adobe.com/view/9c7bd608-ff4c-4b19-825b-05d8c531623b-c928/" title="smart-link" class="external-link" rel="nofollow noreferrer">https://xd.adobe.com/view/9c7bd608-ff4c-4b19-825b-05d8c531623b-c928/</a></li>
+	<li><a href="https://xd.adobe.com/view/f35dee2d-448d-4609-83e1-73a5eb45bfb9-a60e/" title="smart-link" class="external-link" rel="nofollow noreferrer">https://xd.adobe.com/view/f35dee2d-448d-4609-83e1-73a5eb45bfb9-a60e/</a></li>
+</ol>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+Generated at Fri Jun 30 04:48:52 UTC 2023 by Nithin P using Jira 1001.0.0-SNAPSHOT#100227-sha1:9e449c45abebdb6439094c86972ff3e1150d5f43.
+
+</body>
+</html>
